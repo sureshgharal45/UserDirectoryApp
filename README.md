@@ -35,11 +35,11 @@ View a list of users with clickable cards.
 Click on a card to view a detailed profile page for the user.
  # Header Section:
    # Left Section:
-     Back button to navigate to the users' directory.
+   1. Back button to navigate to the users directory.
    # Right Section:
-     Dropdown menu with a list of countries fetched from an API.
-     Digital clock displaying the current time in seconds.
-     Pause/Start button to control the clock.
+   1. Dropdown menu with a list of countries fetched from an API.
+   2. Digital clock displaying the current time in seconds.
+   3. Pause/Start button to control the clock.
 # User Details Section:
   1. Displayed below the header section.
   2. User's name, username, and catchphrase.
