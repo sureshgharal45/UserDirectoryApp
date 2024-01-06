@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* User Cards css */
+.user-directory {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.directory-title {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-card {
+  width: 600px;
+  border: 2px solid rgba(17, 1, 1, 0.856);
+  margin: 10px;
+  padding: 6px;
+  background-color: #d8e7f8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.post-count {
+  font-weight: 600;
+}
+
+.user-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* userDetails css */
+.user-details {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.link-button {
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #bfd1f0;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  border: 2px solid rgba(17, 1, 1, 0.856);
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+  font-family: "Orbitron", sans-serif;
+  font-size: 22px;
+  margin-right: 20px;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #06052e;
+  color: #d8e3f6;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 30px;
+  text-shadow: 0 0 40px rgba(50, 100, 255, 0.5),
+    0 0 25px rgba(255, 255, 255, 0.9);
+}
+
+.clock-pause-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+button {
+  padding: 17px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: #b2cca6;
+  color: black;
+  cursor: pointer;
+}
+
+/* user profile and related posts css */
+.user-details {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.profile h2 {
+  margin-bottom: 10px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 12px 10px;
+}
+
+.username-catchphrase {
+  flex: 2;
+  text-align: center;
+}
+
+.email-phone {
+  flex: 2;
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.post-card {
+  width: calc(25.33% - 20px);
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.post-card h3 {
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  margin-bottom: 0;
+}
+
+/* css the pop up by click on post */
+.post-card {
+  cursor: pointer;
+}
+
+.post-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.post-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* media queries for responsiveness */
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  .user-card {
+    max-width: 350px;
+  }
+
+  .user-info {
+    font-size: 15px;
+  }
+
+  .user-info {
+    margin-bottom: 3%;
+  }
+
+  .post-count {
+    font-weight: 600;
+    margin-top: 6%;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+
+  .username-catchphrase,
+  .email-phone {
+    flex: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left-section {
+    width: 18%;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+
+  .clock-pause-align {
+    width: 100%;
+  }
+
+  .link-button {
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .right-section {
+    text-align: center;
+  }
+
+  .clock {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  select,
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .posts {
+    gap: 15px;
+  }
+
+  .post-card {
+    width: calc(50% - 20px);
+    max-height: 250px;
+  }
+
+  .profile {
+    margin-top: -10%;
+  }
+}
+
+/* For even smaller screens */
+@media screen and (max-width: 480px) {
+  .post-card {
+    width: 100%;
+  }
+}
