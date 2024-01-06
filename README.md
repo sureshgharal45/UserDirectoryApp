@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# USER DIRECTORY APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a web app that displays a directory of users, each with a clickable card leading to their individual profile page. On the profile page, users can view details about the selected user, including their posts, a clock with country selection, and a feature to pause/resume the clock.
 
-## Available Scripts
+# Folder Structure
+# Main Project Folder
+ 1. gitignore
+ 2. package.json
+ 3. package-lock.json
+ 4. README.md
 
-In the project directory, you can run:
+# Public
+ 1. favicon.io
+ 2. index.html
+ 3. manifest.json
+ 4. robots.txt
 
-### `npm start`
+# src
+ 1. App.js
+ 2. App.css
+ 3. index.js
+ 4. index.css
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# src/Components
+  1. Clock.jsx
+  2. ProfilePage.jsx
+  3. UserCardData.jsx
+  4. UserCards.jsx
+  5. UserDetails.jsx
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Covered Features: 
+# User Directory: 
+View a list of users with clickable cards.
+# User Profile Page:
+Click on a card to view a detailed profile page for the user.
+ # Header Section:
+   # Left Section:
+     Back button to navigate to the users' directory.
+   # Right Section:
+     Dropdown menu with a list of countries fetched from an API.
+     Digital clock displaying the current time in seconds.
+     Pause/Start button to control the clock.
+# User Details Section:
+  1. Displayed below the header section.
+  2. User's name, username, and catchphrase.
+  3. User's address, email, and phone number.
+# Posts Section:
+  1. Display all posts as cards under the user details.
+  2. Clicking on a post opens a pop-up displaying the complete post content.
+  3. The pop-up closes when clicking outside its bounds.
 
-### `npm test`
+# Prerequisite to run the project
+1. Nodejs
+2. Package Manager: Either npm which comes with Node.js or Yarn. You can install Yarn from yarnpkg.com
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation and Setup (To run the project)
+1. Clone the respository using `git clone https://github.com/username/UserDirectoryApp`
+2. Navigate to the project directory using cd.
+3. Install dependencies using npm install or yarn install.
+4. Run the application using npm start or yarn start.
 
-### `npm run build`
+# Technologies and Libraries Used:
+1. HMTL
+2. CSS
+3. JS
+4. React
+5. axios
+6. react-router-dom
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Usage
+1. Click on a user card in the directory to view their profile page.
+2. Explore the profile page with user details, posts, and clock functionality.
+3. Use the back button to return to the user directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Project status
+Completed and open for your contributions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# License
+  None.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
